@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial - scale=1.0">
+        <title>COLINS CHERUIYOT PORTFOLIO</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background-color: #000;
+    color: white;
+    line-height: 1.6;
+
+}
+.container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+}
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+nav a {
+    color: #aaaaaa;
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav a:hover {
+    color: white;
+}
+/* HERO - whole page background is here, container stays white */
+.hero { padding: 80px 0; }
+.hero h1 { font-size: 48px; line-height: 1.1; }
+.hero h1 span { color: #559999; }
+.hero p { color: #aaa; margin: 20px 0; max-width: 500px; }
+.btn {
+    background-color: #559999;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+/* PROJECTS */
+.section {
+    padding: 60px 0;
+}
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.card {
+    background-color: white;
+    color: #111;
+    padding: 20px;
+    border-radius: 12px;
+}
+.card h3 {
+    margin-bottom: 10px;
+}
+.card a {
+    color: #559999;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    color:#666;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+}
+.subscribe {
+    width: 300;
+    margin: 10% auto;
+    padding: 30px 20px;
+    background: lightsalmon;
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px rgb(red, green, blue);
+}
+.subscribe h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.subscribe p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.subscribe .input {
+    width: 100%;
+    display: flex;
+    padding: 3px;
+    border: 1px dashed;
+    border-radius: 2px;
+    gap: 5px;
+}
+.subscribe .input input {
+    padding: 8px 18px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.subscribe .input button {
+    padding: 8px 12px;
+    width: 120px;
+    outline: none;
+    border: none;
+    background: #19f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+        </style>
+    </head>   
+    <body>
+        <div class="container">
+            <nav>
+                <strong>COLINS CHERUIYOT</strong>
+                <div>
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav> 
+            <div class="hero">
+                <h1>Hi, I'm <span> Colins Cheruiyot</span><br> Web developher</h1>
+                <p>I build fast, clean websites for small businesses and persornal brandsin Kenya and beyond.</p>
+                <a href="#work" class="btn">View my work</a>
+            </div>
+            <div class="section" id="work">
+    <h2>My Project</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Project 1 - Business website</h3>
+            <p>A clean website I built for a local shop using HTML, CSS and Js.</p>
+            <a href="#">Live Demo</a>
+        </div>
+        <div class="card">
+            <h3>Project 2 - Portfolio Design</h3>
+            <p>Personal template with responsive design.</p>
+            <a href="#">Live Demo</a>
+        </div>
+        <div class="card">
+            <h3>Project 3 - Club website</h3>
+            <p>This is to keep all members of the club united and informed of what is going on.</p>
+            <a href="#">Live Demo</a>
+        </div>
+    </div>
+    <div class="section" id="about">
+        <h3>YOUNG DEVELOPHER</h3>
+        <p>Just a serious developher who refuses to let a day pass without learning a new skills.</p>
+    </div>
+</div>
+            <div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email:colinscheruu5@gmail.com</p>
+    <p>WhatsApp:+25411610816</p>
+    <br>
+    <a href="mailto:colinscheruu5@gmail.com" class="btn">Send Email</a>
+</div>
+<form action="" class="subscribe">
+    <h3>Subscribe To My Portfolio</h3>
+    <p>Subscribe to my portfolio for more updates on skills advanced.</p>
+    <div class="input">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit" 
+        title="subscribe">Subscribe</button>
+    </div>
+</form>
+<footer>2026 Colins Cheruu</footer>
+        </div>
+    </body>
+</html>
